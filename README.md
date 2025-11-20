@@ -19,6 +19,7 @@ Este proyecto es una hoja de vida (CV) interactiva desarrollada con React, imple
 - **Educacion**: Formación académica y cursos
 
 ## Instrucciones para Ejecutar el Proyecto
+![Mi imagen](./public/captura.png)
 
 ### Prerrequisitos
 - Node.js (versión 16 o superior)
