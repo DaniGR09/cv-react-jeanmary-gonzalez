@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import CabeceraCV from './components/CabeceraCV'
+import Perfil from './components/Perfil'
+import Experiencia from './components/Experiencia'
+import Educacion from './components/Educacion'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div style={styles.container}>
+      <CabeceraCV />
+      <Perfil />
+      <Experiencia />
+      <Educacion />
+      <footer style={styles.footer}>
+        <p>© 2025 - CV creado con React</p>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+const styles = {
+  container: {
+    maxWidth: '900px',
+    margin: '0 auto',
+    padding: '20px',
+    backgroundColor: '#ecf0f1',
+    minHeight: '100vh'
+  },
+  footer: {
+    textAlign: 'center',
+    padding: '20px',
+    color: '#7f8c8d',
+    marginTop: '20px'
+  }
+};
+
+export default App;
