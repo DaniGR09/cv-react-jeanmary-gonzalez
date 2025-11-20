@@ -6,8 +6,8 @@ function CabeceraCV() {
           <span style={styles.avatarText}>TN</span>
         </div>
       </div>
-      <h1 style={styles.nombre}>Tu Nombre Completo</h1>
-      <h2 style={styles.titulo}>💻 Desarrollador Front-End React</h2>
+      <h1 style={styles.nombre}>Jeanmary Danielys Gonzalez Rojas</h1>
+      <h2 style={styles.titulo}>Tecnologo en Analisis y Desarrollo de Software</h2>
       <div style={styles.contacto}>
         <div style={styles.contactoItem}>
           <span style={styles.icono}>📞</span>
@@ -15,17 +15,16 @@ function CabeceraCV() {
         </div>
         <div style={styles.contactoItem}>
           <span style={styles.icono}>📧</span>
-          <span>tuemail@ejemplo.com</span>
+          <span>jeanmarydanielys3@gmail.com</span>
         </div>
         <div style={styles.contactoItem}>
           <span style={styles.icono}>📍</span>
-          <span>Bogotá, Colombia</span>
+          <span>La Estrella, Antioquia</span>
         </div>
       </div>
       <div style={styles.redes}>
-        <a href="#" style={styles.redButton}>🔗 LinkedIn</a>
-        <a href="#" style={styles.redButton}>💼 GitHub</a>
-        <a href="#" style={styles.redButton}>🌐 Portfolio</a>
+        <a href="#" style={styles.redButton}>🔗 https://www.linkedin.com/in/jeanmary-danielys-gonz%C3%A1lez-b70604334/</a>
+        <a href="#" style={styles.redButton}>💼 https://github.com/DaniGR09</a>
       </div>
     </header>
   );
