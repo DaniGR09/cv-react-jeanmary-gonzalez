@@ -1,12 +1,31 @@
 function CabeceraCV() {
   return (
     <header style={styles.header}>
-      <h1 style={styles.nombre}>JEANMARY DANIELYS GONZALEZ ROJAS</h1>
-      <h2 style={styles.titulo}>TECNOLOGÍA EN ANALISIS Y DESARROLLO DE SOFTWARE</h2>
+      <div style={styles.avatarContainer}>
+        <div style={styles.avatar}>
+          <span style={styles.avatarText}>TN</span>
+        </div>
+      </div>
+      <h1 style={styles.nombre}>Tu Nombre Completo</h1>
+      <h2 style={styles.titulo}>💻 Desarrollador Front-End React</h2>
       <div style={styles.contacto}>
-        <p>📞 +57 3045712242</p>
-        <p>📧 jeanmarydanielys3@gmail.com</p>
-        <p>📍 La estrella, Antioquia</p>
+        <div style={styles.contactoItem}>
+          <span style={styles.icono}>📞</span>
+          <span>+57 300 123 4567</span>
+        </div>
+        <div style={styles.contactoItem}>
+          <span style={styles.icono}>📧</span>
+          <span>tuemail@ejemplo.com</span>
+        </div>
+        <div style={styles.contactoItem}>
+          <span style={styles.icono}>📍</span>
+          <span>Bogotá, Colombia</span>
+        </div>
+      </div>
+      <div style={styles.redes}>
+        <a href="#" style={styles.redButton}>🔗 LinkedIn</a>
+        <a href="#" style={styles.redButton}>💼 GitHub</a>
+        <a href="#" style={styles.redButton}>🌐 Portfolio</a>
       </div>
     </header>
   );
@@ -14,28 +33,87 @@ function CabeceraCV() {
 
 const styles = {
   header: {
-    backgroundColor: '#2c3e50',
+    background: 'linear-gradient(135deg, #1976d2 0%, #42a5f5 100%)',
     color: 'white',
-    padding: '30px',
+    padding: '40px 30px',
     textAlign: 'center',
-    borderRadius: '10px',
+    borderRadius: '20px',
+    marginBottom: '25px',
+    boxShadow: '0 8px 25px rgba(25, 118, 210, 0.3)',
+    position: 'relative',
+    overflow: 'hidden'
+  },
+  avatarContainer: {
+    display: 'flex',
+    justifyContent: 'center',
     marginBottom: '20px'
   },
+  avatar: {
+    width: '120px',
+    height: '120px',
+    borderRadius: '50%',
+    backgroundColor: 'white',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    border: '5px solid rgba(255, 255, 255, 0.3)',
+    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)'
+  },
+  avatarText: {
+    fontSize: '3em',
+    fontWeight: 'bold',
+    color: '#1976d2'
+  },
   nombre: {
-    margin: '0',
-    fontSize: '2.5em'
+    margin: '0 0 10px 0',
+    fontSize: '2.8em',
+    fontWeight: 'bold',
+    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)'
   },
   titulo: {
-    margin: '10px 0',
-    fontSize: '1.5em',
-    color: '#3498db'
+    margin: '0 0 25px 0',
+    fontSize: '1.6em',
+    color: '#e3f2fd',
+    fontWeight: '500'
   },
   contacto: {
     display: 'flex',
     justifyContent: 'center',
-    gap: '20px',
-    marginTop: '15px',
-    flexWrap: 'wrap'
+    gap: '30px',
+    marginTop: '20px',
+    flexWrap: 'wrap',
+    marginBottom: '25px'
+  },
+  contactoItem: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    padding: '10px 20px',
+    borderRadius: '25px',
+    backdropFilter: 'blur(10px)',
+    fontSize: '0.95em'
+  },
+  icono: {
+    fontSize: '1.2em'
+  },
+  redes: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '15px',
+    flexWrap: 'wrap',
+    marginTop: '20px'
+  },
+  redButton: {
+    backgroundColor: 'white',
+    color: '#1976d2',
+    padding: '12px 25px',
+    borderRadius: '25px',
+    textDecoration: 'none',
+    fontWeight: 'bold',
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
+    cursor: 'pointer'
   }
 };
 
