@@ -1,7 +1,7 @@
 function Perfil() {
   const habilidadesTecnicas = [
-    "React", "JavaScript ES6+", "HTML5/CSS3", 
-    "Git & GitHub", "Responsive Design", "REST APIs"
+    "Python", "SQL", "HTML5/CSS3", 
+    "Git & GitHub", "C#", "MongoDB"
   ];
 
   const habilidadesBlandas = [
@@ -16,10 +16,10 @@ function Perfil() {
       
       <div style={styles.descripcionContainer}>
         <p style={styles.descripcion}>
-          Desarrollador Front-End apasionado por crear experiencias web 
-          intuitivas y funcionales. Con sólidos conocimientos en React y 
-          el ecosistema JavaScript moderno, busco aplicar mis habilidades 
-          técnicas en proyectos desafiantes que generen impacto real.
+          Soy estudiante del último trimestre de Tecnología en Análisis y Desarrollo de Software. Poseo conocimientos
+sólidos en Python, bases de datos (SQL) y metodologías ágiles. Soy una persona responsable, comprometida y
+con gran adaptabilidad. Busco una oportunidad de práctica para iniciar a partir del 16 de enero de 2026 donde
+pueda fortalecer mis competencias y aportar a proyectos reales de desarrollo.
         </p>
         <p style={styles.descripcion}>
           Me destaco por mi capacidad de aprendizaje continuo, trabajo 

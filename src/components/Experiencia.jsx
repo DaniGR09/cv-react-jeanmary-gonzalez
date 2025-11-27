@@ -2,84 +2,29 @@ function Experiencia() {
   const experiencias = [
     {
       id: 1,
-      cargo: "Desarrollador Front-End React",
-      empresa: "TechCorp Solutions",
-      año: "2024 - Presente",
-      descripcion: "Desarrollo de aplicaciones web con React y TypeScript. Implementación de interfaces responsivas y optimización de rendimiento.",
+      cargo: "Bartender / Auxiliar de Bar ",
+      empresa: "Parrilla Isabella",
+      año: "Diciembre 2022 - Enero 2023",
+      descripcion: "Coordinación con el equipo de meseros para garantizar un servicio ágil y preparación y servicio eficiente de bebidas, gestionando múltiples pedidos bajo presión.",
       tipo: "trabajo"
     },
     {
       id: 2,
-      cargo: "Practicante de Desarrollo Web",
-      empresa: "Digital Innovations S.A.S",
-      año: "2023 - 2024",
-      descripcion: "Apoyo en el desarrollo de componentes reutilizables con React. Participación en reuniones de planificación ágil.",
-      tipo: "trabajo"
+      cargo: "Backend para Aplicación Android",
+      empresa: "Proyecto Personal",
+      año: "2025",
+      descripcion: "Se desarrolló una API REST completa para una aplicación Android funcional.",
+      tipo: "proyecto"
     },
     {
       id: 3,
-      cargo: "Proyecto: E-Commerce con React",
-      empresa: "Proyecto Personal",
-      año: "2024",
-      descripcion: "Desarrollo completo de tienda en línea con carrito de compras, integración con API REST y pasarela de pagos simulada.",
-      tipo: "proyecto"
-    },
-    {
-      id: 4,
-      cargo: "Proyecto: Dashboard Administrativo",
+      cargo: "Sistema de Control de Asistencia",
       empresa: "Proyecto Académico SENA",
-      año: "2023",
-      descripcion: "Sistema de gestión con gráficas en tiempo real usando React y Chart.js. Autenticación con JWT.",
-      tipo: "proyecto"
-    },
-    {
-      id: 5,
-      cargo: "Freelance - Landing Pages",
-      empresa: "Clientes Independientes",
-      año: "2023",
-      descripcion: "Diseño y desarrollo de páginas de aterrizaje para pequeñas empresas. Optimización SEO y velocidad de carga.",
-      tipo: "trabajo"
-    },
-    {
-      id: 6,
-      cargo: "Proyecto: App de Tareas con React",
-      empresa: "Proyecto Personal",
-      año: "2023",
-      descripcion: "Aplicación de gestión de tareas con funcionalidades CRUD, filtros dinámicos y almacenamiento local.",
-      tipo: "proyecto"
-    },
-    {
-      id: 7,
-      cargo: "Líder Técnico - Hackathon",
-      empresa: "SENA Hackathon 2024",
-      año: "2024",
-      descripcion: "Liderazgo de equipo de 4 personas en competencia de desarrollo. Creación de prototipo funcional en 48 horas.",
-      tipo: "trabajo"
-    },
-    {
-      id: 8,
-      cargo: "Proyecto: Clone de Netflix",
-      empresa: "Proyecto de Aprendizaje",
-      año: "2023",
-      descripcion: "Réplica de interfaz de Netflix consumiendo API de películas. Implementación de búsqueda y categorías dinámicas.",
-      tipo: "proyecto"
-    },
-    {
-      id: 9,
-      cargo: "Asistente de Soporte TI",
-      empresa: "CompuServicios Ltda",
-      año: "2022 - 2023",
-      descripcion: "Soporte técnico a usuarios finales, mantenimiento de equipos y resolución de incidencias de software.",
-      tipo: "trabajo"
-    },
-    {
-      id: 10,
-      cargo: "Proyecto: Portfolio Personal Interactivo",
-      empresa: "Proyecto Personal",
-      año: "2024",
-      descripcion: "Portafolio web con animaciones, modo oscuro/claro y sección de proyectos con filtros interactivos.",
+      año: "2025",
+      descripcion: "Se desarrolló una aplicación de escritorio para el registro y control de asistencia.",
       tipo: "proyecto"
     }
+
   ];
 
   return (

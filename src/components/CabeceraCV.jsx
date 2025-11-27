@@ -11,7 +11,7 @@ function CabeceraCV() {
       <div style={styles.contacto}>
         <div style={styles.contactoItem}>
           <span style={styles.icono}>📞</span>
-          <span>+57 300 123 4567</span>
+          <span>+57 304 5712242</span>
         </div>
         <div style={styles.contactoItem}>
           <span style={styles.icono}>📧</span>

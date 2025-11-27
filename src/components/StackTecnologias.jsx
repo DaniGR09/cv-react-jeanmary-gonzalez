@@ -1,20 +1,15 @@
 function StackTecnologias() {
   const tecnologias = [
-    { id: 1, nombre: "JavaScript", nivel: "Avanzado", color: "#f0db4f" },
-    { id: 2, nombre: "React", nivel: "Avanzado", color: "#61dafb" },
+    { id: 1, nombre: "Python", nivel: "Intermedio", color: "#f0db4f" },
+    { id: 2, nombre: "C#", nivel: "Intermedio", color: "#61dafb" },
     { id: 3, nombre: "HTML5", nivel: "Avanzado", color: "#e34c26" },
     { id: 4, nombre: "CSS3", nivel: "Avanzado", color: "#264de4" },
-    { id: 5, nombre: "Node.js", nivel: "Intermedio", color: "#68a063" },
-    { id: 6, nombre: "Git", nivel: "Avanzado", color: "#f34f29" },
-    { id: 7, nombre: "GitHub", nivel: "Avanzado", color: "#181717" },
-    { id: 8, nombre: "TypeScript", nivel: "Intermedio", color: "#3178c6" },
-    { id: 9, nombre: "Tailwind CSS", nivel: "Intermedio", color: "#06b6d4" },
-    { id: 10, nombre: "MongoDB", nivel: "Básico", color: "#4db33d" },
-    { id: 11, nombre: "Express.js", nivel: "Intermedio", color: "#000000" },
-    { id: 12, nombre: "MySQL", nivel: "Intermedio", color: "#00758f" },
-    { id: 13, nombre: "Figma", nivel: "Intermedio", color: "#a259ff" },
-    { id: 14, nombre: "Vite", nivel: "Avanzado", color: "#646cff" },
-    { id: 15, nombre: "Redux", nivel: "Básico", color: "#764abc" }
+    { id: 5, nombre: "Git", nivel: "Avanzado", color: "#f34f29" },
+    { id: 6, nombre: "GitHub", nivel: "Avanzado", color: "#181717" },
+    { id: 7, nombre: "MongoDB", nivel: "Avanzado", color: "#4db33d" },
+    { id: 8, nombre: "MySQL", nivel: "Avanzado", color: "#00758f" },
+    { id: 9, nombre: "Figma", nivel: "Básico", color: "#a259ff" },
+    { id: 10, nombre: "Kotlin", nivel: "Básico", color: "#764abc" }
   ];
 
   // Función para obtener estilo según el nivel

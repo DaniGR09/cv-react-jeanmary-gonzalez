@@ -5,95 +5,39 @@ function Educacion() {
       tipo: "Tecnólogo",
       titulo: "Tecnólogo en Análisis y Desarrollo de Software",
       institucion: "SENA - Servicio Nacional de Aprendizaje",
-      año: "2023 - 2025",
+      año: "2024 - 2025",
       estado: "En curso"
     },
     {
       id: 2,
-      tipo: "Curso",
-      titulo: "React - La Guía Completa: Hooks, Context, MERN y +100",
-      institucion: "Udemy",
-      año: "2024",
+      tipo: "Bachiller",
+      titulo: "Bachiller Academico",
+      institucion: "Ana Eva Escobar",
+      año: "2023",
       estado: "Completado"
     },
     {
       id: 3,
       tipo: "Curso",
-      titulo: "JavaScript Moderno: ES6, ES7, ES8, ES9, ES10+",
-      institucion: "Platzi",
-      año: "2024",
+      titulo: "GIT",
+      institucion: "W3Schools",
+      año: "2025",
       estado: "Completado"
     },
     {
       id: 4,
-      tipo: "Certificación",
-      titulo: "Responsive Web Design Certification",
-      institucion: "freeCodeCamp",
-      año: "2023",
+      tipo: "Curso",
+      titulo: "MondoDB",
+      institucion: "W3Schools",
+      año: "2025",
       estado: "Completado"
     },
     {
       id: 5,
-      tipo: "Taller",
-      titulo: "Git y GitHub para Desarrolladores",
-      institucion: "SENA",
-      año: "2023",
-      estado: "Completado"
-    },
-    {
-      id: 6,
       tipo: "Curso",
-      titulo: "Node.js: De Cero a Experto",
-      institucion: "Udemy",
-      año: "2024",
-      estado: "En curso"
-    },
-    {
-      id: 7,
-      tipo: "Seminario",
-      titulo: "Metodologías Ágiles: Scrum y Kanban",
-      institucion: "Google Activate",
-      año: "2024",
-      estado: "Completado"
-    },
-    {
-      id: 8,
-      tipo: "Curso",
-      titulo: "Diseño UX/UI Avanzado con Figma",
-      institucion: "Domestika",
-      año: "2024",
-      estado: "Completado"
-    },
-    {
-      id: 9,
-      tipo: "Taller",
-      titulo: "Introducción a Bases de Datos SQL y NoSQL",
-      institucion: "SENA",
-      año: "2023",
-      estado: "Completado"
-    },
-    {
-      id: 10,
-      tipo: "Curso",
-      titulo: "CSS Avanzado: Flexbox, Grid y Animaciones",
-      institucion: "Platzi",
-      año: "2023",
-      estado: "Completado"
-    },
-    {
-      id: 11,
-      tipo: "Certificación",
-      titulo: "JavaScript Algorithms and Data Structures",
-      institucion: "freeCodeCamp",
-      año: "2024",
-      estado: "Completado"
-    },
-    {
-      id: 12,
-      tipo: "Seminario",
-      titulo: "Ciberseguridad para Desarrolladores",
-      institucion: "Universidad Distrital",
-      año: "2024",
+      titulo: "SQL",
+      institucion: "W3Schools",
+      año: "2025",
       estado: "Completado"
     }
   ];
