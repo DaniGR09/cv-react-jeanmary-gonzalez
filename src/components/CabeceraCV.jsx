@@ -3,7 +3,7 @@ function CabeceraCV() {
     <header style={styles.header}>
       <div style={styles.avatarContainer}>
         <div style={styles.avatar}>
-          <span style={styles.avatarText}>TN</span>
+          <span style={styles.avatarText}>JG</span>
         </div>
       </div>
       <h1 style={styles.nombre}>Jeanmary Danielys Gonzalez Rojas</h1>
