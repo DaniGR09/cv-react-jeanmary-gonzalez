@@ -1,34 +1,15 @@
-function CabeceraCV() {
+function CabeceraCV({ nombre, cargo, ciudad, contacto }) {
   return (
     <header style={styles.header}>
-      <div style={styles.avatarContainer}>
-        <div style={styles.avatar}>
-          <span style={styles.avatarText}>JG</span>
-        </div>
-      </div>
-      <h1 style={styles.nombre}>Jeanmary Danielys Gonzalez Rojas</h1>
-      <h2 style={styles.titulo}>Tecnologo en Analisis y Desarrollo de Software</h2>
-      <div style={styles.contacto}>
-        <div style={styles.contactoItem}>
-          <span style={styles.icono}>📞</span>
-          <span>+57 304 5712242</span>
-        </div>
-        <div style={styles.contactoItem}>
-          <span style={styles.icono}>📧</span>
-          <span>jeanmarydanielys3@gmail.com</span>
-        </div>
-        <div style={styles.contactoItem}>
-          <span style={styles.icono}>📍</span>
-          <span>La Estrella, Antioquia</span>
-        </div>
-      </div>
-      <div style={styles.redes}>
-        <a href="#" style={styles.redButton}>🔗 https://www.linkedin.com/in/jeanmary-danielys-gonz%C3%A1lez-b70604334/</a>
-        <a href="#" style={styles.redButton}>💼 https://github.com/DaniGR09</a>
-      </div>
+      <h1>{nombre}</h1>
+      <h2>{cargo}</h2>
+      <p>📞 {contacto.telefono} | 📧 {contacto.email} | 📍 {ciudad}</p>
+      <p>🔗 <a href={contacto.linkedin}>LinkedIn</a> | 💼 <a href={contacto.github}>GitHub</a></p>
     </header>
   );
 }
+
+export default CabeceraCV;
 
 const styles = {
   header: {
@@ -116,4 +97,4 @@ const styles = {
   }
 };
 
-export default CabeceraCV;
+

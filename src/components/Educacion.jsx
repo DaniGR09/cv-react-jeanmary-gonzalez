@@ -1,99 +1,19 @@
-function Educacion() {
-  const formacion = [
-    {
-      id: 1,
-      tipo: "Tecnólogo",
-      titulo: "Tecnólogo en Análisis y Desarrollo de Software",
-      institucion: "SENA - Servicio Nacional de Aprendizaje",
-      año: "2024 - 2025",
-      estado: "En curso"
-    },
-    {
-      id: 2,
-      tipo: "Bachiller",
-      titulo: "Bachiller Academico",
-      institucion: "Ana Eva Escobar",
-      año: "2023",
-      estado: "Completado"
-    },
-    {
-      id: 3,
-      tipo: "Curso",
-      titulo: "GIT",
-      institucion: "W3Schools",
-      año: "2025",
-      estado: "Completado"
-    },
-    {
-      id: 4,
-      tipo: "Curso",
-      titulo: "MondoDB",
-      institucion: "W3Schools",
-      año: "2025",
-      estado: "Completado"
-    },
-    {
-      id: 5,
-      tipo: "Curso",
-      titulo: "SQL",
-      institucion: "W3Schools",
-      año: "2025",
-      estado: "Completado"
-    }
-  ];
 
-  // Función para obtener color según el tipo
-  const obtenerColor = (tipo) => {
-    const colores = {
-      "Tecnólogo": { bg: "#e3f2fd", border: "#1976d2", text: "#0d47a1" },
-      "Curso": { bg: "#e8f5e9", border: "#43a047", text: "#2e7d32" },
-      "Certificación": { bg: "#fff3e0", border: "#fb8c00", text: "#e65100" },
-      "Taller": { bg: "#f3e5f5", border: "#8e24aa", text: "#6a1b9a" },
-      "Seminario": { bg: "#fce4ec", border: "#ec407a", text: "#c2185b" }
-    };
-    return colores[tipo] || colores["Curso"];
-  };
-
+function Educacion({ formacion }) {
   return (
-    <section style={styles.section}>
-      <h3 style={styles.titulo}>🎓 Educación y Formación</h3>
-      <div style={styles.timeline}>
-        {formacion.map((item) => {
-          const colores = obtenerColor(item.tipo);
-          return (
-            <div 
-              key={item.id} 
-              style={{
-                ...styles.timelineItem,
-                borderLeft: `4px solid ${colores.border}`
-              }}
-            >
-              <div style={styles.itemHeader}>
-                <span style={{
-                  ...styles.tipoBadge,
-                  backgroundColor: colores.bg,
-                  color: colores.text
-                }}>
-                  {item.tipo}
-                </span>
-                <span style={{
-                  ...styles.estadoBadge,
-                  backgroundColor: item.estado === "En curso" ? "#bbdefb" : "#c8e6c9",
-                  color: item.estado === "En curso" ? "#1565c0" : "#2e7d32"
-                }}>
-                  {item.estado === "En curso" ? "📚 En curso" : "✅ Completado"}
-                </span>
-              </div>
-              <h4 style={styles.tituloFormacion}>{item.titulo}</h4>
-              <p style={styles.institucion}>🏛️ {item.institucion}</p>
-              <p style={styles.año}>📅 {item.año}</p>
-            </div>
-          );
-        })}
-      </div>
+    <section>
+      <h3>🎓 Educación</h3>
+      {formacion.map(({id, tipo, titulo, institucion, año, estado}) => (
+        <div key={id}>
+          <h4>{titulo} ({tipo})</h4>
+          <p>{institucion} - {año} - {estado}</p>
+        </div>
+      ))}
     </section>
   );
 }
+
+export default Educacion;
 
 const styles = {
   section: {
@@ -164,5 +84,3 @@ const styles = {
     fontWeight: '500'
   }
 };
-
-export default Educacion;

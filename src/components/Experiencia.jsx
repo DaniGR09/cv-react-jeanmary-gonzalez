@@ -1,65 +1,19 @@
-function Experiencia() {
-  const experiencias = [
-    {
-      id: 1,
-      cargo: "Bartender / Auxiliar de Bar ",
-      empresa: "Parrilla Isabella",
-      año: "Diciembre 2022 - Enero 2023",
-      descripcion: "Coordinación con el equipo de meseros para garantizar un servicio ágil y preparación y servicio eficiente de bebidas, gestionando múltiples pedidos bajo presión.",
-      tipo: "trabajo"
-    },
-    {
-      id: 2,
-      cargo: "Backend para Aplicación Android",
-      empresa: "Proyecto Personal",
-      año: "2025",
-      descripcion: "Se desarrolló una API REST completa para una aplicación Android funcional.",
-      tipo: "proyecto"
-    },
-    {
-      id: 3,
-      cargo: "Sistema de Control de Asistencia",
-      empresa: "Proyecto Académico SENA",
-      año: "2025",
-      descripcion: "Se desarrolló una aplicación de escritorio para el registro y control de asistencia.",
-      tipo: "proyecto"
-    }
-
-  ];
-
+function Experiencia({ experiencias }) {
   return (
-    <section style={styles.section}>
-      <h3 style={styles.titulo}>💼 Experiencia Profesional y Proyectos</h3>
-      <div style={styles.grid}>
-        {experiencias.map((exp) => (
-          <div 
-            key={exp.id} 
-            style={{
-              ...styles.card,
-              borderLeft: exp.tipo === 'proyecto' 
-                ? '4px solid #3498db' 
-                : '4px solid #2ecc71'
-            }}
-          >
-            <div style={styles.cardHeader}>
-              <span style={{
-                ...styles.badge,
-                backgroundColor: exp.tipo === 'proyecto' ? '#e3f2fd' : '#e8f5e9',
-                color: exp.tipo === 'proyecto' ? '#1976d2' : '#388e3c'
-              }}>
-                {exp.tipo === 'proyecto' ? '🚀 Proyecto' : '💼 Trabajo'}
-              </span>
-              <span style={styles.año}>{exp.año}</span>
-            </div>
-            <h4 style={styles.cargo}>{exp.cargo}</h4>
-            <p style={styles.empresa}>{exp.empresa}</p>
-            <p style={styles.descripcion}>{exp.descripcion}</p>
-          </div>
-        ))}
-      </div>
+    <section>
+      <h3>💼 Experiencia</h3>
+      {experiencias.map(({id, cargo, empresa, año, descripcion, tipo}) => (
+        <div key={id}>
+          <h4>{cargo} - {empresa}</h4>
+          <p>{año}</p>
+          <p>{descripcion}</p>
+        </div>
+      ))}
     </section>
   );
 }
+
+export default Experiencia;
 
 const styles = {
   section: {
@@ -127,5 +81,3 @@ const styles = {
     fontSize: '0.9em'
   }
 };
-
-export default Experiencia;

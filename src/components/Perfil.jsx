@@ -1,66 +1,14 @@
-function Perfil() {
-  const habilidadesTecnicas = [
-    "Python", "SQL", "HTML5/CSS3", 
-    "Git & GitHub", "C#", "MongoDB"
-  ];
-
-  const habilidadesBlandas = [
-    "Trabajo en equipo", "Comunicación efectiva", 
-    "Resolución de problemas", "Aprendizaje rápido",
-    "Pensamiento crítico", "Adaptabilidad"
-  ];
-
+function Perfil({ resumen }) {
   return (
-    <section style={styles.section}>
-      <h3 style={styles.titulo}>👤 Perfil Profesional</h3>
-      
-      <div style={styles.descripcionContainer}>
-        <p style={styles.descripcion}>
-          Soy estudiante del último trimestre de Tecnología en Análisis y Desarrollo de Software. Poseo conocimientos
-sólidos en Python, bases de datos (SQL) y metodologías ágiles. Soy una persona responsable, comprometida y
-con gran adaptabilidad. Busco una oportunidad de práctica para iniciar a partir del 16 de enero de 2026 donde
-pueda fortalecer mis competencias y aportar a proyectos reales de desarrollo.
-        </p>
-        <p style={styles.descripcion}>
-          Me destaco por mi capacidad de aprendizaje continuo, trabajo 
-          colaborativo y compromiso con las mejores prácticas de desarrollo. 
-          Siempre en búsqueda de nuevas tecnologías y metodologías que 
-          mejoren la calidad del código y la experiencia del usuario.
-        </p>
-      </div>
-
-      <div style={styles.habilidadesGrid}>
-        <div style={styles.habilidadSeccion}>
-          <h4 style={styles.subtitulo}>
-            <span style={styles.iconoSubtitulo}>⚡</span>
-            Habilidades Técnicas
-          </h4>
-          <div style={styles.habilidades}>
-            {habilidadesTecnicas.map((habilidad, index) => (
-              <span key={index} style={styles.badgeTecnica}>
-                {habilidad}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <div style={styles.habilidadSeccion}>
-          <h4 style={styles.subtitulo}>
-            <span style={styles.iconoSubtitulo}>🤝</span>
-            Habilidades Blandas
-          </h4>
-          <div style={styles.habilidades}>
-            {habilidadesBlandas.map((habilidad, index) => (
-              <span key={index} style={styles.badgeBlanda}>
-                {habilidad}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
+    <section>
+      <h3>👤 Perfil Profesional</h3>
+      <p>{resumen}</p>
     </section>
   );
 }
+
+export default Perfil;
+
 
 const styles = {
   section: {
@@ -141,4 +89,4 @@ const styles = {
   }
 };
 
-export default Perfil;
+
